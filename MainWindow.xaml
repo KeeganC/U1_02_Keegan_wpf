@@ -1,0 +1,29 @@
+﻿<Window x:Class="U1_02_Keegan_wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:U1_02_Keegan_wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <StackPanel>
+        <Label 
+            x:Name="lblTitle"
+            Content="Type your name in the box below."
+            FontSize="25"/>
+        <TextBox
+             x:Name="entryName"
+             Text="Type here"
+            FontSize="20"/>
+        <Button
+            x:Name="btnShowGreeting"
+            Content="Next"
+            Click="btnShowGreeting_Click"
+            FontSize="20"
+            Width="60"/>
+        <Label
+            x:Name="lblOutput"
+            Content=" "
+            FontSize="30"/>
+    </StackPanel>
+</Window>
